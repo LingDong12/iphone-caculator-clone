@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Caculator</title>
+        <link href="styling.css" rel="stylesheet">
+        <script src="index.js"></script>
+    </head>
+
+
+    <body>
+
+
+
+
+        <main id="calculator">
+            <!--cell phone style re-edit-->
+            <input type="text" id="input" disabled="disabled">
+            <div id="operator">
+                <div class="button-dir">
+                    <button class="gray" onclick="cl()">AC</button>
+                    <button class="gray" onclick="frontStr('')">+/-</button>
+                    <button class="gray" onclick="hundredPercent('')">%</button>
+                    <button class="orange" onclick="addNum('/')">÷</button>
+                </div>
+                <div class="button-dir">
+                    <button onclick="addNum(7)">7</button>
+                    <button onclick="addNum(8)">8</button>
+                    <button onclick="addNum(9)">9</button>
+                    <button class="orange" onclick="addNum('*')">x</button>
+                </div>
+
+                <div class="button-dir">
+                    <button onclick="addNum(4)">4</button>
+                    <button onclick="addNum(5)"">5</button>
+                    <button onclick=" addNum(6)">6</button>
+                    <button class="orange" onclick="addNum('-')">-</button>
+
+                </div>
+
+                <div class="button-dir">
+                    <button onclick="addNum(1)">1</button>
+                    <button onclick="addNum(2)">2</button>
+                    <button onclick="addNum(3)">3</button>
+                    <button class="orange" onclick="addNum('+')">+</button>
+                </div>
+
+                <div class="button-dir">
+                    <button id="zero" onclick="addNum(0)">0</button>
+                    <button onclick="addNum('.')">.</button>
+                    <button class="orange" id="equal" onclick="calc()">=</button>
+                </div>
+            </div>
+
+
+        </main>
+    </body>
+
+</html>
